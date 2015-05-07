@@ -1,0 +1,17 @@
+group 'net.croz.tt-spock'
+version '0.0.1-SNAPSHOT'
+
+apply plugin: 'groovy'
+
+repositories {
+  mavenCentral()
+  jcenter()
+}
+
+dependencies {
+  compile "org.codehaus.groovy:groovy-all:2.4.1"
+  testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
+  testCompile 'com.athaydes:spock-reports:1.2.5'
+
+  testRuntime "com.h2database:h2:1.4.182"
+}
